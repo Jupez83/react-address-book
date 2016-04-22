@@ -5,7 +5,7 @@ import { IndexLinkContainer, LinkContainer } from 'react-router-bootstrap'
 export default class TopNavbar extends React.Component {
   render() {
     return (
-      <Navbar inverse>
+      <Navbar inverse fixedTop={true}>
         <Navbar.Header>
           <Navbar.Brand>
             React Address Book
