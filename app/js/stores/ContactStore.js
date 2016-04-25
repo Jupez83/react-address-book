@@ -29,7 +29,7 @@ class ContactStore extends EventEmitter {
   }
 
   getContactByIndex(index) {
-    return this.contact.data[index];
+    return this.contacts.data[index];
   }
 }
 
