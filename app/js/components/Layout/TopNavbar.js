@@ -1,5 +1,5 @@
-import React from 'react';
-import { Navbar, Nav, NavItem } from 'react-bootstrap'
+import React from 'react'
+import { Nav, Navbar, NavItem } from 'react-bootstrap'
 import { IndexLinkContainer, LinkContainer } from 'react-router-bootstrap'
 
 export default class TopNavbar extends React.Component {
