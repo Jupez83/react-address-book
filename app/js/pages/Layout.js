@@ -1,7 +1,7 @@
-import React from "react";
-import { Link } from "react-router";
-import TopNavbar from '../components/Layout/TopNavbar'
+import React from 'react'
 import { Grid, Row, Col } from "react-bootstrap"
+
+import TopNavbar from '../components/Layout/TopNavbar'
 
 export default class Layout extends React.Component {
   render() {
