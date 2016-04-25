@@ -23,7 +23,7 @@ class ContactStore extends EventEmitter {
   emitChange() {
     this.emit(Constants.CHANGE_EVENT);
   }
-  
+
   getAllContacts() {
     return this.contacts;
   }
@@ -40,7 +40,7 @@ contactStore.dispatchToken = AppDispatcher.register(function(action) {
 
   switch (action.type) {
 
-    case Constants.ADD_CONTACT:
+    case Constants.ACTION_ADD_CONTACT:
       for (let key in action.contact) {
         let i = contactStore.contacts.header.indexOf(key);
         if (i >= 0) {
@@ -50,7 +50,7 @@ contactStore.dispatchToken = AppDispatcher.register(function(action) {
       contactStore.contacts.data.push(row);
       break;
 
-    case Constants.EDIT_CONTACT:
+    case Constants.ACTION_EDIT_CONTACT:
       for (let key in action.contact) {
         let i = contactStore.contacts.header.indexOf(key);
         if (i >= 0) {
@@ -60,7 +60,7 @@ contactStore.dispatchToken = AppDispatcher.register(function(action) {
       contactStore.contacts.data[action.contactId] = row;
       break;
 
-    case Constants.REMOVE_CONTACT:
+    case Constants.ACTION_REMOVE_CONTACT:
       contactStore.contacts.data.splice(action.contactId, 1);
       break;
 
