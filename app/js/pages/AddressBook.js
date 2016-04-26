@@ -43,7 +43,7 @@ export default class AddressBook extends React.Component {
     return (
       <div>
         <h1>Address Book</h1><hr/>
-        <Table headData={Constants.CONTACT_HEADER}
+        <Table headData={Constants.CONTACT_FIELDS}
                bodyData={this.state.contacts.data}
                editHandler={this.editHandler.bind(this)}
                removeHandler={this.removeHandler.bind(this)}

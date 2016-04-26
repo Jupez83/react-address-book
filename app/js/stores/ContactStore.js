@@ -8,7 +8,7 @@ class ContactStore extends EventEmitter {
   constructor() {
     super();
     this.contacts = {};
-    this.contacts.header = Constants.CONTACT_HEADER;
+    this.contacts.header = Constants.CONTACT_FIELDS;
     this.contacts.data = [];
   }
 
