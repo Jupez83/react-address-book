@@ -11,6 +11,7 @@ class THead extends React.Component {
               return <th key={id}>{row}</th>;
             })
           }
+          <th></th>
         </tr>
       </thead>
     );
