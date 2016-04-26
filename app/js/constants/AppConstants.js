@@ -10,6 +10,9 @@ const CONTACT_FIELDS = [CONTACT_NAME, CONTACT_ADDRESS, CONTACT_CITY, CONTACT_EMA
 
 const CHANGE_EVENT = 'change';
 
+const BUTTON_ADD  = 'Add Contact';
+const BUTTON_EDIT  = 'Edit Contact';
+
 const Constants = Object.freeze({
   ACTION_ADD_CONTACT,
   ACTION_EDIT_CONTACT,
@@ -20,6 +23,8 @@ const Constants = Object.freeze({
   CONTACT_ADDRESS,
   CONTACT_CITY,
   CONTACT_EMAIL,
+  BUTTON_ADD,
+  BUTTON_EDIT,
 });
 
 export default Constants;

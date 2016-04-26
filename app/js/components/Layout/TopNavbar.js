@@ -18,7 +18,7 @@ export default class TopNavbar extends React.Component {
               <NavItem>Address book</NavItem>
             </IndexLinkContainer>
             <LinkContainer to={'/contacts'} activeClassName="active">
-              <NavItem>Add contact</NavItem>
+              <NavItem>Contact</NavItem>
             </LinkContainer>
           </Nav>
         </Navbar.Collapse>
